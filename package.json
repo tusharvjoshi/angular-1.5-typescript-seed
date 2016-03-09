@@ -7,7 +7,7 @@
     "typescript",
     "angular material"
   ],
-  "author": "Andrew Hamilton",
+  "author": "Andrew Hamilton <andrew.hamilton.dev@gmail.com>",
   "license": "MIT",
   "homepage": "https://github.com/andrew-hamilton-dev/angular-1.5-typescript/",
   "repository": {
