@@ -2,7 +2,6 @@
 
 var _ = require('lodash');
 var vorpal = require('vorpal')();
-var data = require('commander');
 var fs = require('fs');
 var S = require('string');
 var path = require('path');

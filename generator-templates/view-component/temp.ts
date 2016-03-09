@@ -38,6 +38,7 @@ export class <%= captialCaseName %> implements ng.IComponentOptions {
   public $canActivate: any = (): boolean => {
     return true
   }
+}
 
 /**
  * <%= upperCaseName %> - Controller

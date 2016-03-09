@@ -29,6 +29,7 @@ export class <%= captialCaseName %> implements ng.IComponentOptions {
    * @type {Object}
    */
   public bindings: Object = {}
+}
 
   /**
    * <%= upperCaseName %> - Controller

@@ -49,9 +49,29 @@
           "AngularServices",
           "AppServices"
         ],
-        "logger": "$log.getInstance('<%= captialCaseName %>', true);",
+        "logger": "$log.getInstance('<%= upperCaseName %>', true);",
+        "scssCommonPath": "../../common/variables"
+      }
+    },
+    {
+      "id": "component:view",
+      "outputFolder": "/src/components/",
+      "templateFolder": "/generator-templates/view-component/",
+      "files": [
+        "temp.html",
+        "temp.scss",
+        "temp.ts",
+        "temp.spec.ts"
+      ],
+      "data": {
+        "di": [
+          "$log",
+          "AngularServices",
+          "AppServices"
+        ],
+        "logger": "$log.getInstance('<%= upperCaseName %>', true);",
         "scssCommonPath": "../../common/variables"
       }
     }
-    ]
-  }
+  ]
+}
