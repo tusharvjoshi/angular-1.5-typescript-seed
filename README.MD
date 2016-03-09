@@ -1,4 +1,4 @@
-[View Demo](https://angular-typescript-seed.surge.sh)
+[View Demo](https://angular-typescript-seed.surge.sh) Hosted by [Surge](http://surge.sh/)
 
 ###Features
 * [Angular 1.5](https://angularjs.org/)
