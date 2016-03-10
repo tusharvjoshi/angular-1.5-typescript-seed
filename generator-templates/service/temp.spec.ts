@@ -1,11 +1,11 @@
-describe('Service::<%= upperCaseName %>', () => {
+describe('Service::<%= captialCaseName %>', () => {
     let <%= captialCaseName %>
 
     // load app module so we can access everything
     beforeEach(window.module('app'))
 
     // inject service to test
-    beforeEach(inject((_<%= upperCaseName %>_) => {
+    beforeEach(inject((_<%= captialCaseName %>_) => {
         <%= captialCaseName %> = _<%= captialCaseName %>_
     }))
 

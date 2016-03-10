@@ -4,7 +4,7 @@ import './<%= name %>.scss'
  *  Component Definition
  *
  * @export
- * @class <%= upperCaseName %>
+ * @class <%= captialCaseName %>
  * @implements {ng.IComponentOptions}
  */
 export class <%= captialCaseName %> implements ng.IComponentOptions {
@@ -31,13 +31,13 @@ export class <%= captialCaseName %> implements ng.IComponentOptions {
   public bindings: Object = {}
 }
 
-  /**
-   * <%= upperCaseName %> - Controller
-   *
-   * @export
-   * @class <%= upperCaseName %>Controller
-   */
-  export class <%= captialCaseName %>Controller {
+/**
+ * <%= captialCaseName %> - Controller
+ *
+ * @export
+ * @class <%= captialCaseName %>Controller
+ */
+export class <%= captialCaseName %>Controller {
 
   /**
    * $inject to make angular DI minifiication safe
@@ -47,21 +47,21 @@ export class <%= captialCaseName %> implements ng.IComponentOptions {
    */
   public static $inject: [string] = [<%= injectors %>]
 
-    /**
-     * @param {*} $log Angular Log Service
-     * @param {*} angularServices Angular Services Convenience Service
-     * @param {*} appServices App Services Convenience Service
-     */
-    constructor(<%= params %>) {
-      this.$log = <%= logger %>
-        this.$log.debug('constructor')
-    }
+  /**
+   * @param {*} $log Angular Log Service
+   * @param {*} angularServices Angular Services Convenience Service
+   * @param {*} appServices App Services Convenience Service
+   */
+  constructor(<%= params %>) {
+    this.$log = <%= logger %>
+      this.$log.debug('constructor')
+  }
 
   /**
    *  life cycle hook (road to ng2)
    */
   public $onInit(): void {
-      this.$log.debug('onInit')
-    }
-
+    this.$log.debug('onInit')
   }
+
+}

@@ -1,77 +1,72 @@
 {
+  "common": {
+    "data": {
+      "di": [
+        "$log"
+      ],
+      "logger": "$log.getInstance('<%= captialCaseName %>', true);",
+      "scssCommonPath": "../../variables"
+    }
+  },
+  "commonChild": {
+    "data": {
+      "di": [
+        "$log"
+      ],
+      "logger": "$log.getInstance('<%= captialCaseName %>', true);",
+      "scssCommonPath": "../../../../variables"
+    }
+  },
+  "feature": {
+    "data": {
+      "di": [
+        "$log",
+        "AngularServices",
+        "AppServices"
+      ],
+      "logger": "$log.getInstance('<%= captialCaseName %>', true);",
+      "scssCommonPath": "../../common/variables"
+    }
+  },
+  "featureChild": {
+    "data": {
+      "di": [
+        "$log",
+        "AngularServices",
+        "AppServices"
+      ],
+      "logger": "$log.getInstance('<%= captialCaseName %>', true);",
+      "scssCommonPath": "../../../../common/variables"
+    }
+  },
   "bundles": [
     {
-      "id": "common:service",
-      "outputFolder": "/src/common/services/",
+      "id": "service",
       "templateFolder": "/generator-templates/service/",
       "files": [
         "temp.ts",
         "temp.spec.ts"
-      ],
-      "data": {
-        "di": [
-          "$log"
-        ],
-        "logger": "$log.getInstance('<%= upperCaseName %>', true);"
-      }
-    },
-    {
-      "id": "common:component",
-      "outputFolder": "/src/common/components/",
-      "templateFolder": "/generator-templates/component/",
-      "files": [
-        "temp.html",
-        "temp.scss",
-        "temp.ts",
-        "temp.spec.ts"
-      ],
-      "data": {
-        "di": [
-          "$log"
-        ],
-        "logger": "$log.getInstance('<%= upperCaseName %>', true);",
-        "scssCommonPath": "../../variables"
-      }
+      ]
     },
     {
       "id": "component",
-      "outputFolder": "/src/components/",
       "templateFolder": "/generator-templates/component/",
       "files": [
         "temp.html",
         "temp.scss",
         "temp.ts",
         "temp.spec.ts"
-      ],
-      "data": {
-        "di": [
-          "$log",
-          "AngularServices",
-          "AppServices"
-        ],
-        "logger": "$log.getInstance('<%= upperCaseName %>', true);",
-        "scssCommonPath": "../../common/variables"
-      }
+      ]
     },
     {
-      "id": "component:view",
-      "outputFolder": "/src/components/",
-      "templateFolder": "/generator-templates/view-component/",
+      "id": "router component",
+      "templateFolder": "/generator-templates/router-component/",
       "files": [
         "temp.html",
         "temp.scss",
         "temp.ts",
         "temp.spec.ts"
-      ],
-      "data": {
-        "di": [
-          "$log",
-          "AngularServices",
-          "AppServices"
-        ],
-        "logger": "$log.getInstance('<%= upperCaseName %>', true);",
-        "scssCommonPath": "../../common/variables"
-      }
+      ]
     }
   ]
 }

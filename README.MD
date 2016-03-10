@@ -47,10 +47,9 @@
 #####CLI Tool to create boilerplate files for components and services based on the seeds file structure
 `npm run generator`
 
-* common:server - generates service boilerplate into src/common/services/
-* common:component - generates component boilerplate into src/common/components/
-* component - generates component into src/components
-* component:view - generates a component with router hooks (used for components which the router renders on routes)
+* service - generates the boilerplate for an angular service
+* component - generates the boilerplate for an angular component
+* router component - generates the boilerplate for an angular component with component router life cycle hooks
 
 ---
 

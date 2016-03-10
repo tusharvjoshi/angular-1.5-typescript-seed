@@ -1,4 +1,4 @@
-describe('Component::<%= upperCaseName %>', () => {
+describe('Component::<%= captialCaseName %>', () => {
 
   // component to run each test against
   let component: any

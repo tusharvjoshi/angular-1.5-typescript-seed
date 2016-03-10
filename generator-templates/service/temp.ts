@@ -2,9 +2,10 @@
  *  <Desription of Service here>
  *
  * @export
- * @class <%= upperCaseName %>
+ * @class <%= captialCaseName %>
  */
 export class <%= captialCaseName %> {
+
   /**
    * $inject to make angular DI minifiication safe
    *

@@ -4,7 +4,7 @@ import './<%= name %>.scss'
  *  Component Definition
  *
  * @export
- * @class <%= upperCaseName %>
+ * @class <%= captialCaseName %>
  * @implements {ng.IComponentOptions}
  */
 export class <%= captialCaseName %> implements ng.IComponentOptions {
@@ -41,10 +41,10 @@ export class <%= captialCaseName %> implements ng.IComponentOptions {
 }
 
 /**
- * <%= upperCaseName %> - Controller
+ * <%= captialCaseName %> - Controller
  *
  * @export
- * @class <%= upperCaseName %>Controller
+ * @class <%= captialCaseName %>Controller
  */
 export class <%= captialCaseName %>Controller {
 
@@ -63,7 +63,7 @@ export class <%= captialCaseName %>Controller {
    */
   constructor(<%= params %>) {
     this.$log = <%= logger %>
-    this.$log.debug('constructor')
+      this.$log.debug('constructor')
   }
 
   /**
