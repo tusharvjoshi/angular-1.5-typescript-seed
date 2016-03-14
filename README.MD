@@ -24,12 +24,16 @@
 ###Installation
 `npm install` - install all dependancies, typings and webdriver-manager for protractor
 
+NOTE:  The path to the webdriver-manager in protactor.config.js when running protractor may need to be adjusted if you are using npm2
+
+
 ###Start Webpack Dev Server
 #####http://localhost:8000/webpack-dev-server/
 `npm start`
 
 ###Release Build
 `npm run release` - generate minified js/css + sourcemaps & copies static files (assets, index.html, etc) to ./dist
+
 
 ###Testing
 #####coverage stats are located in ./src/coverage
@@ -39,9 +43,11 @@
 
 `npm run tests:e2e` - run end to end tests (dev server needs to be running so it has a place to hit)
 
+
 ###Docs
 #####located in ./builds/docs
 `npm run docs:all` - generates typedoc and sassdoc
+
 
 ###Generator
 #####CLI Tool to create boilerplate files for components and services based on the seeds file structure
