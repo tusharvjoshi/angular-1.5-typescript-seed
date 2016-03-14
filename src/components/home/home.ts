@@ -8,18 +8,21 @@ import './home.scss'
  * @implements {ng.IComponentOptions}
  */
 export class Home implements ng.IComponentOptions {
+
   /**
    * Controller used with Component
    *
    * @type {Function}
    */
   public controller: Function = HomeController
+
   /**
    * Template used with Component
    *
    * @type {string}
    */
   public template: string = require('./home.html').toString()
+
   /**
    * Object containing pairs Directive Bindings for Component
    *
@@ -45,6 +48,7 @@ export class Home implements ng.IComponentOptions {
  * @class HomeController
  */
 export class HomeController {
+
   /**
    * $inject to make angular DI minifiication safe
    *

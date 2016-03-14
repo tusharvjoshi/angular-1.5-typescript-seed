@@ -8,18 +8,21 @@ import './not-found.scss'
  * @implements {ng.IComponentOptions}
  */
 export class NotFound implements ng.IComponentOptions {
+
   /**
    * Controller used with Component
    *
    * @type {Function}
    */
   public controller: Function = NotFoundController
+
   /**
    * Template used with Component
    *
    * @type {string}
    */
   public template: string = require('./not-found.html').toString()
+
   /**
    * Object containing pairs Directive Bindings for Component
    *
@@ -44,6 +47,7 @@ export class NotFound implements ng.IComponentOptions {
  * @class NotFoundController
  */
 export class NotFoundController {
+
   /**
    * $inject to make angular DI minifiication safe
    *

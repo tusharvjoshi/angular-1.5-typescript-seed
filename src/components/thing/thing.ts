@@ -8,18 +8,21 @@ import './thing.scss'
  * @implements {ng.IComponentOptions}
  */
 export class Thing implements ng.IComponentOptions {
+
   /**
    * Controller used with Component
    *
    * @type {Function}
    */
   public controller: Function = ThingController
+
   /**
    * Template used with Component
    *
    * @type {string}
    */
   public template: string = require('./thing.html').toString()
+
   /**
    * Object containing pairs Directive Bindings for Component
    *
