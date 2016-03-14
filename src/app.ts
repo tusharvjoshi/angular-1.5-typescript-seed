@@ -6,18 +6,21 @@
  * @implements {ng.IComponentOptions}
  */
 export class App implements ng.IComponentOptions {
+
   /**
    * Controller used with Component
    *
    * @type {Function}
    */
   public controller: Function = AppController
+
   /**
    * Template used with Component
    *
    * @type {string}
    */
   public template: string = require('./app.html').toString()
+
   /**
    * Object containing pairs Directive Bindings for Component
    *
@@ -39,6 +42,7 @@ export class App implements ng.IComponentOptions {
  * @class AppController
  */
 export class AppController {
+
   /**
    * $inject to make angular DI minifiication safe
    *

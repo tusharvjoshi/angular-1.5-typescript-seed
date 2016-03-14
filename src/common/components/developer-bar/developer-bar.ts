@@ -8,18 +8,21 @@ import './developer-bar.scss'
  * @implements {ng.IComponentOptions}
  */
 export class DeveloperBar implements ng.IComponentOptions {
+
   /**
    * Controller used with Component
    *
    * @type {Function}
    */
   public controller: Function = DeveloperBarController
+
   /**
    * Template used with Component
    *
    * @type {string}
    */
   public template: string = require('./developer-bar.html').toString()
+
   /**
    * Object containing pairs Directive Bindings for Component
    *
@@ -35,6 +38,7 @@ export class DeveloperBar implements ng.IComponentOptions {
  * @class AngularLogoController
  */
 class DeveloperBarController {
+
   /**
    * $inject to make angular DI minifiication safe
    *

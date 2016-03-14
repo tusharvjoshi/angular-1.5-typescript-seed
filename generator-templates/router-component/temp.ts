@@ -58,8 +58,8 @@ export class <%= captialCaseName %>Controller {
 
   /**
    * @param {*} $log Angular Log Service
-   * @param {*} angularServices Angular Services Convenience Service
-   * @param {*} appServices App Services Convenience Service
+   * @param {*} AngularServices Angular Services Convenience Service
+   * @param {*} AppServices App Services Convenience Service
    */
   constructor(<%= params %>) {
     this.$log = <%= logger %>
@@ -67,21 +67,25 @@ export class <%= captialCaseName %>Controller {
   }
 
   /**
-   *  life cycle hook (road to ng2)
+   * life cycle hook (road to ng2)
+   * Component is fully bound and all bindings/di are available to work with.
    */
   public $onInit(): void {
     this.$log.debug('onInit')
   }
 
   /**
-   *  router life cycle hook (road to ng2)
+   * router life cycle hook
+   * triggered when arrived on route
+   *
    */
   public $routerOnActivate(toRoute: any, fromRoute: any): void {
     this.$log.debug('$routerOnActivate', toRoute, fromRoute)
   }
 
   /**
-   *  router life cycle hook (road to ng2)
+   * router life cycle hook
+   * Used to determine if a route can be departed
    */
   public $routerCanDeactivate(): boolean {
     this.$log.debug('$routerCanDeactivate', arguments)
@@ -89,7 +93,8 @@ export class <%= captialCaseName %>Controller {
   }
 
   /**
-   *  router life cycle hook (road to ng2)
+   * router life cycle hook
+   * triggered when route is departed
    */
   public $routerOnDeactivate(): void {
     this.$log.debug('$routerOnDeactivate', arguments)

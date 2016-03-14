@@ -4,7 +4,7 @@ import './not-found.scss'
  *  Component Definition
  *
  * @export
- * @class notFound
+ * @class NotFound
  * @implements {ng.IComponentOptions}
  */
 export class NotFound implements ng.IComponentOptions {
@@ -41,7 +41,7 @@ export class NotFound implements ng.IComponentOptions {
  * notFound - Controller
  *
  * @export
- * @class notFoundController
+ * @class NotFoundController
  */
 export class NotFoundController {
   /**
@@ -54,8 +54,8 @@ export class NotFoundController {
 
   /**
    * @param {*} $log Angular Log Service
-   * @param {*} angularServices Angular Services Convenience Service
-   * @param {*} appServices App Services Convenience Service
+   * @param {*} AngularServices Angular Services Convenience Service
+   * @param {*} AppServices App Services Convenience Service
    */
   constructor(public $log: any, public AngularServices: any, public AppServices: any) {
     this.$log = $log.getInstance('NotFound', false)
@@ -63,7 +63,7 @@ export class NotFoundController {
   }
 
   /**
-   *  life cycle hook (road to ng2)
+   * life cycle hook (road to ng2)
    */
   public $onInit(): void {
     this.$log.debug('onInit')

@@ -24,7 +24,7 @@ angular.module('app', [
   Components.name,
 ])
 .config(AppConfig)
-.value('$routerRootComponent', 'app')
+.value('$routerRootComponent', 'app') // top level router component, contains the intial routes and views
 .component('app', new App())
 
 // start angular using code instead of ng-app declaration in the index.html

@@ -68,8 +68,8 @@ export class AngularLogoController {
 
   /**
    * @param {*} $log Angular Log Service
-   * @param {*} angularServices Angular Services Convenience Service
-   * @param {*} appServices App Services Convenience Service
+   * @param {*} AngularServices Angular Services Convenience Service
+   * @param {*} AppServices App Services Convenience Service
    */
   constructor(public $log: any, public AngularServices: any, public AppServices: any) {
     this.$log = $log.getInstance('AngularLogo', false)
@@ -79,7 +79,7 @@ export class AngularLogoController {
   }
 
   /**
-   *  life cycle hook (road to ng2)
+   * life cycle hook (road to ng2)
    */
   public $onInit(): void {
     this.$log.debug('onInit')
