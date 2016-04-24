@@ -28,7 +28,7 @@ export class NotFound implements ng.IComponentOptions {
    *
    * @type {Object}
    */
-  public bindings: Object = {
+  public bindings: { [binding: string]: string; } = {
     $router: '<'
   }
 

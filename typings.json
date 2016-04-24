@@ -1,7 +1,7 @@
 {
   "ambientDependencies": {
-    "angular": "github:DefinitelyTyped/DefinitelyTyped/angularjs/angular.d.ts#3bebbe1baee04846cc46ed7249e8117e4cd7c7ff",
-    "angular-component-router": "registry:dt/angular-component-router#1.5.0+20160209151603",
+    "angular": "registry:dt/angular#1.5.0+20160320081937",
+    "angular-component-router": "registry:dt/angular-component-router#1.5.0+20160317120654",
     "angular-material": "github:DefinitelyTyped/DefinitelyTyped/angular-material/angular-material.d.ts#2d0a1b1502610025bd55ce8eaa48069da8a16c82",
     "angular-mocks": "github:DefinitelyTyped/DefinitelyTyped/angularjs/angular-mocks.d.ts#77dd2668f85730372aa8e62152e652048e8b6b87",
     "jasmine": "github:DefinitelyTyped/DefinitelyTyped/jasmine/jasmine.d.ts#777e7d1b1d6c6250d6fba52ea9e6841f7a6b5e9d",

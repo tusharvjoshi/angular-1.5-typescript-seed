@@ -28,7 +28,7 @@ export class AngularLogo implements ng.IComponentOptions {
    *
    * @type {Object}
    */
-  public bindings: Object = {
+  public bindings: { [binding: string]: string; } = {
     logoImagePath: '@?', // optional binding
     version: '@?', // optional binding
   }

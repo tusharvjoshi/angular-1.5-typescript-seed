@@ -7,7 +7,7 @@
 export class <%= captialCaseName %> {
 
   /**
-   * $inject to make angular DI minifiication safe
+   * $inject to make angular DI minification safe
    *
    * @static
    * @type {Array<string>}

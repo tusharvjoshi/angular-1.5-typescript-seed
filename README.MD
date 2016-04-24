@@ -1,7 +1,7 @@
 [View Demo](https://angular-typescript-seed.surge.sh) Hosted by [Surge](http://surge.sh/)
 
 ###Features
-* [Angular 1.5](https://angularjs.org/)
+* [Angular 1.5.5](https://angularjs.org/)
 * [Angular Material](https://material.angularjs.org/latest/) w/ [Material Icon Font](https://design.google.com/icons/)
 * [Angular Component Router](https://github.com/angular/angular/tree/master/modules/angular1_router)
 * [Typescript](http://www.typescriptlang.org/) using [Webpack](https://webpack.github.io/)

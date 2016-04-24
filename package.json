@@ -32,7 +32,8 @@
     "test": "karma start ./karma.config.js --single-run",
     "test:tdd": "karma start ./karma.config.js --auto-watch --no-single-run",
     "test:e2e": "parallelshell 'node_modules/.bin/webdriver-manager start' 'node_modules/.bin/protractor ./protractor.config.js'",
-    "generator": "node generator.js"
+    "generator": "node generator.js",
+    "celebrate": "spotify play the final countdown && spotify pos 60"
   },
   "config": {
     "ghooks": {
@@ -51,6 +52,7 @@
     "ng-stats": "^2.5.2"
   },
   "devDependencies": {
+    "angular": "^1.5.3",
     "angular-mocks": "^1.5.0",
     "autoprefixer": "^6.3.3",
     "css-loader": "^0.23.1",
