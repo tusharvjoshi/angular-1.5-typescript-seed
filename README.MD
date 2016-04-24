@@ -14,6 +14,7 @@
 * End to End Tests w/ [Protractor](https://angular.github.io/protractor/#/)
 * [TSLint](https://palantir.github.io/tslint/)
 * [TSDoc](https://github.com/xperiments/TSDoc) and [SassDoc](http://sassdoc.com/) Generation
+* Local JSON Rest API Server for quick Prototyping [Json-Server](https://github.com/typicode/json-server)
 * CLI Tool to create boilerplate files for components and services
 * Runs tests before commits via [ghooks](https://github.com/gtramontina/ghooks)
 * Integrated Local Environment Developer Bar w/ Performance Stats via [ng-stats](http://kentcdodds.com/ng-stats/)
@@ -27,7 +28,7 @@
 NOTE:  The path to the webdriver-manager in protactor.config.js when running protractor may need to be adjusted if you are using npm2
 
 
-###Start Webpack Dev Server
+###Start Webpack Dev Server & Local JSON Rest API
 #####http://localhost:8000/webpack-dev-server/
 `npm start`
 
@@ -74,3 +75,5 @@ NOTE:  The path to the webdriver-manager in protactor.config.js when running pro
 * TSlint
 * Document This
 * VSCode Todo
+* Stylesheet Formatter
+* Prettify JSON
