@@ -12,7 +12,7 @@ export class <%= captialCaseName %> {
    * @static
    * @type {Array<string>}
    */
-  public static $inject [string] = [<%= injectors %>];
+  public static $inject: [string] = [<%= injectors %>];
 
   /**
    * @param {$log} $log - Angular logging Service.
