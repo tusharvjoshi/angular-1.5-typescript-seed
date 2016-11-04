@@ -28,7 +28,7 @@ export class App implements ng.IComponentOptions {
    */
   public bindings: { [binding: string]: string; } = {}
 
-  public $routeConfig: any = [
+  public $routeProvider: any = [
     {path: '/', name: 'Home', component: 'home', useAsDefault: true},
     {path: '/thing/:id', name: 'Thing', component: 'thing'},
     {path: '/**', name: 'NotFound', component: 'notFound' }
