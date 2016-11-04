@@ -43,6 +43,9 @@
     }
   },
   "dependencies": {
+    "@angular/common": "^2.1.2",
+    "@angular/core": "^2.1.2",
+    "@angular/platform-browser": "^2.1.2",
     "@angular/router": "*",
     "LogUnobtrusiveExtension": "git+ssh://git@github.com/lwhiteley/AngularLogExtender.git#0.0.10",
     "angular": "^1.5.0",
@@ -50,8 +53,11 @@
     "angular-aria": "^1.5.0",
     "angular-material": "^1.0.5",
     "angular-messages": "^1.5.0",
+    "angular-route": "^1.5.8",
     "lodash": "^4.2.1",
-    "ng-stats": "^2.5.2"
+    "ng-stats": "^2.5.2",
+    "rxjs": "^5.0.0-beta.12",
+    "zone.js": "^0.6.26"
   },
   "devDependencies": {
     "angular": "^1.5.3",
