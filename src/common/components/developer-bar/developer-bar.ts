@@ -40,7 +40,7 @@ export class DeveloperBar implements ng.IComponentOptions {
 class DeveloperBarController {
 
   /**
-   * $inject to make angular DI minifiication safe
+   * $inject to make angular Dependency Injection minifiication safe
    *
    * @static
    * @type {Array<string>}

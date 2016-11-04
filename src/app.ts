@@ -63,7 +63,9 @@ export class AppController {
 
   /**
    * life cycle hooks
-   * Called on each controller after all the controllers on an element have been constructed and had their bindings initialized (and before the pre & post linking functions for the directives on this element).
+   * Called on each controller after all the controllers on an element have been constructed and 
+   * had their bindings initialized (and before the pre & post linking functions for the 
+   * directives on this element).
    */
   public $onInit(): void {
     this.$log.debug('onInit')
