@@ -1,3 +1,9 @@
+Current Changes to Try
+* Change ngComponentRouter to ngRoute
+* Install ES6 Shim for Typings
+* Install all dependencies manually
+
+
 [View Demo](https://angular-typescript-seed.surge.sh) Hosted by [Surge](http://surge.sh/)
 
 ###Features
