@@ -1,8 +1,8 @@
 /*
- * Vendor Imports 
+ * Vendor Imports
  * The import feature of typescript allows modules to be loaded. The scope is contained
  * within the module similar to the standard ES2015 export import
- * 
+ *
  * NOTE: The use of curly braces is only required when the component is not the default
  * export from the file.
  *
@@ -25,14 +25,14 @@ import Components from './components/components.ts';
 import {App} from './app.ts'
 import AppConfig from './app.config.ts'
 
-/*  
+/*
  * Top Level Angular Module
  *
  * First argument accepts the name of the app, the second passes in the components which
  * will be included.
- * 
+ *
  * Note: Both Common and Components export individual apps which are subsets of the main app.
- * 
+ *
 */
 angular.module('app', [
    'ngRoute',
@@ -43,7 +43,6 @@ angular.module('app', [
    Components.name
 ])
 .config(AppConfig)
-.value('$routeProvider', 'app') // top level router component, contains the intial routes and views
 .component('app', new App())
 
 // start angular using code instead of ng-app declaration in the index.html

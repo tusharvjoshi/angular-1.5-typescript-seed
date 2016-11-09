@@ -51,17 +51,18 @@ export class ThingController {
    * @static
    * @type {Array<string>}
    */
-  public static $inject: [string] = ['$log', 'AngularServices', 'AppServices']
+  public static $inject: [string] = ['$log', '$routeParams', 'AngularServices', 'AppServices']
   public id: Number = 0
 
   /**
    * @param {*} $log Angular Log Service
-   * @param {*} AngularServices Angular Services Convenience Service
+   * @param {*} AngularServices Angular Son activateervices Convenience Service
    * @param {*} AppServices App Services Convenience Service
    */
-  constructor(public $log: any, public AngularServices: any, public AppServices: any) {
-    this.$log = $log.getInstance('Thing', false)
+  constructor(public $log: any, public $routeParams: any, public AngularServices: any, public AppServices: any) {
+    this.$log = $log.getInstance('Thing', true)
     this.$log.debug('constructor')
+    this.id = $routeParams.id;
   }
 
   /**
@@ -73,7 +74,6 @@ export class ThingController {
 
   public $routerOnActivate($nextInstruction: any, $prevInstruction: any): void {
     this.$log.debug('$routerOnActivate', $nextInstruction, $prevInstruction)
-    this.id = $nextInstruction.params.id
   }
 
   public $routerCanDeactivate(): void {

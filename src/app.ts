@@ -28,11 +28,12 @@ export class App implements ng.IComponentOptions {
    */
   public bindings: { [binding: string]: string; } = {}
 
+/*
   public $routeProvider: any = [
     {path: '/', name: 'Home', component: 'home', useAsDefault: true},
     {path: '/thing/:id', name: 'Thing', component: 'thing'},
     {path: '/**', name: 'NotFound', component: 'notFound' }
-  ]
+  ]*/
 }
 
 /**
@@ -63,8 +64,8 @@ export class AppController {
 
   /**
    * life cycle hooks
-   * Called on each controller after all the controllers on an element have been constructed and 
-   * had their bindings initialized (and before the pre & post linking functions for the 
+   * Called on each controller after all the controllers on an element have been constructed and
+   * had their bindings initialized (and before the pre & post linking functions for the
    * directives on this element).
    */
   public $onInit(): void {
