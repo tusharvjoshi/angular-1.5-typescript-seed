@@ -20,7 +20,7 @@
   "scripts": {
     "postinstall": "node_modules/.bin/typings install && node_modules/.bin/webdriver-manager update --standalone",
     "start": "parallelshell 'npm run build' 'npm run api'",
-    "build": "npm run dev:clean && npm run dev:copy && npm run docs:all && opener http://localhost:8000/webpack-dev-server/ && node ./webpack-server.js",
+    "build": "npm run dev:clean && npm run dev:copy && opener http://localhost:8000/webpack-dev-server/ && node ./webpack-server.js",
     "dev:clean": "rm -rf ./builds && mkdir builds",
     "dev:copy": "cp ./src/index.html ./builds/index.html && cp -r ./src/assets ./builds/assets",
     "release": "npm run release:clean && npm run release:copy && npm run release:webpack",
@@ -54,6 +54,7 @@
     "angular-material": "^1.0.5",
     "angular-messages": "^1.5.0",
     "angular-route": "^1.5.8",
+    "json-server": "^0.8.23",
     "lodash": "^4.2.1",
     "ng-stats": "^2.5.2",
     "rxjs": "^5.0.0-beta.12",

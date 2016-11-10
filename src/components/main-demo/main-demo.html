@@ -1,0 +1,31 @@
+<div class="overview-demo-input">
+   <label for="demo-number">
+      Enter a number <span class="glyphicon glyphicon-arrow-right"></span>
+   </label>
+
+   <input type="number" class="demo-input" ng-model="$ctrl.amount" name="demo-number">
+
+   <label for="demo-selection">
+      Rounding <span class="glyphicon glyphicon-arrow-right"></span>
+   </label>
+
+   <select class="demo-input" ng-model="$ctrl.round" name="demo-selection">
+      <option value="none">Don't Round</option>
+      <option value="ones">Ones</option>
+      <option value="tenths">Tenths</option>
+      <option value="hundredths">Hundredths</option>
+      <option value="thousandths">Thousandths</option>
+   </select>
+
+</div>
+
+<div class="overview-demo-output">
+   <div class="container-fluid">
+      <div class="row">
+         <div class="col-md-3" ng-repeat="calc in $ctrl.numCalc | orderBy:$ctrl.largest">
+            <h3 class="sub-title"> {{calc.title}} {{calc.modifier}} </h3>
+            <div class="demo-output-number">{{$ctrl.calculate(calc.modifier, calc.op, $ctrl.amount)}}</div>
+         </div>
+      </div>
+   </div>
+</div>

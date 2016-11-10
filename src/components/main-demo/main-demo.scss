@@ -1,0 +1,19 @@
+@import '../../common/variables';
+
+
+.overview-demo-input {
+  .demo-input {
+    padding: 5px;
+    border-radius: 3px;
+    text-align: center;
+    margin: 10px;
+  }
+
+}
+
+.overview-demo-output {
+  .col-md-3 {
+    width: 24%;
+    display: inline-block;
+  }
+}
