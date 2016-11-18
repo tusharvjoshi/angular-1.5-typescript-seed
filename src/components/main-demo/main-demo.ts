@@ -54,10 +54,10 @@ export class MainDemoController {
    * @static
    * @type {Array<string>}
    */
-  public static $inject: [string] = ['$log', 'AngularServices', 'AppServices']
+  public static $inject: [string] = ['$log']
 
-  public amount: number = 3;
   public round: string = 'none'
+  public initInput: number = 3
 
   public numCalc: any = [
         {
@@ -79,7 +79,7 @@ export class MainDemoController {
         }
       ]
 
-  public potOps: any = [
+  public static potentialOperations: any = [
         {
           operation: 'Addition',
           symbol: '+'
@@ -103,7 +103,7 @@ export class MainDemoController {
    * @param {*} AngularServices Angular Services Convenience Service
    * @param {*} AppServices App Services Convenience Service
    */
-  constructor(public $log: any, public AngularServices: any, public AppServices: any) {
+  constructor(public $log: any) {
     this.$log = $log.getInstance('MainDemo', false)
     this.$log.debug('constructor')
   }
