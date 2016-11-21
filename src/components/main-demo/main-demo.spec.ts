@@ -30,15 +30,15 @@ describe('Component::mainDemo', () => {
     })
   })
 
-  describe('::public variables', () => {
-    it('should contain a default input number of 3', () => {
+  describe('::constructor', () => {
+    it('should contain initInput with default value of 3', () => {
       expect(component.initInput).toBeDefined()
       expect(component.initInput).toBe(3)
     })
   })
 
   describe('::constructor()', () => {
-    it('should contain a default input number of 3', () => {
+    it('should contain round with default value of none', () => {
       expect(component.initInput).toBeDefined()
       expect(component.initInput).toBe(3)
     })

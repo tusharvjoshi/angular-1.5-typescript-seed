@@ -1,0 +1,50 @@
+<div class="student-register-container container">
+   <div class="jumbotron">
+      <h1 class="register-title"> Math Student Registration</h1>
+      <p>
+         Here you'll register your math student account. There will be an excessive
+         number of questions.
+      </p>
+   </div>
+
+   <form class="form-horizontal" name="mathRegister" novalidate>
+
+      <!-- First Name Input -->
+      <div class="form-group">
+         <label for="inputFirstName" class="col-sm-2 control-label">First name</label>
+         <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputFirstName" ng-model="$ctrl.user.firstName">
+         </div>
+      </div>
+
+      <!-- Last Name Input -->
+      <div class="form-group">
+         <label for="inputLastName" class="col-sm-2 control-label">Last name</label>
+         <div class="col-sm-10">
+            <input type="text" class="form-control" id="inputLastName" ng-model="$ctrl.user.lastName">
+         </div>
+      </div>
+
+      <div class="form-group">
+         <label for="inputCountry" class="col-sm-2 control-label">Country</label>
+         <div class="col-sm-10">
+            <select type="text" class="form-control" id="inputCountry" required>
+               <option value=""> Canada </option>
+               <option ng-repeat="country in $ctrl.countries"> {{country.name}} </option>
+            </select>
+         </div>
+      </div>
+
+      <div class="form-group">
+         <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default" ng-click="$ctrl.save($ctrl.user, mathRegister)">Save Info</button>
+            <button type="submit" class="btn btn-default" ng-click="$ctrl.reset()">Reset</button>
+         </div>
+      </div>
+   </form>
+
+  <pre>user = {{$ctrl.user.name | json}} </pre>
+  <pre>user = {{$ctrl.user.firstName | json}} </pre>
+  <pre>countries = {{$ctrl.countries | json}} </pre>
+
+</div>
