@@ -55,57 +55,60 @@ export class MainDemoController {
    * @type {Array<string>}
    */
   public static $inject: [string] = ['$log']
-
-  public round: string = 'none'
-  public initInput: number = 3
-
-  public numCalc: any = [
-        {
-          modifier: 6,
-          op: 'add',
-          title: 'Add ',
-        } , {
-          modifier: 1,
-          op: 'subtract',
-          title: 'Subtract ',
-        } , {
-          modifier: 20,
-          op: 'multiply',
-          title: 'Multiply by ',
-        } , {
-          modifier: 2,
-          op: 'divide',
-          title: 'Divide by ',
-        }
-      ]
-
-  public static potentialOperations: any = [
-        {
-          operation: 'Addition',
-          symbol: '+'
-        },
-        {
-          operation: 'Subtract',
-          symbol: '-'
-        },
-        {
-          operation: 'Multiply',
-          symbol: '*'
-        },
-        {
-          operation: 'Divide',
-          symbol: '\/'
-        },
-      ]
+  public round: string;
+  public initInput: number;
+  public numCalc: any;
+  public potentialOperations: any;
 
   /**
    * @param {*} $log Angular Log Service
    * @param {*} AngularServices Angular Services Convenience Service
    * @param {*} AppServices App Services Convenience Service
    */
-  constructor(public $log: any) {
-    this.$log = $log.getInstance('MainDemo', false)
-    this.$log.debug('constructor')
+   constructor(public $log: any) {
+      this.$log = $log.getInstance('MainDemo', false)
+      this.$log.debug('constructor')
+
+      this.round = 'none'
+      this.initInput = 3
+      this.numCalc = [
+         {
+            modifier: 6,
+            op: 'add',
+            title: 'Add ',
+         } , {
+            modifier: 1,
+            op: 'subtract',
+            title: 'Subtract ',
+         } , {
+            modifier: 20,
+            op: 'multiply',
+            title: 'Multiply by ',
+         } , {
+            modifier: 2,
+            op: 'divide',
+            title: 'Divide by ',
+         }
+      ]
+
+      this.potentialOperations = [
+         {
+            operation: 'Addition',
+            symbol: '+'
+         },
+         {
+            operation: 'Subtract',
+            symbol: '-'
+         },
+         {
+            operation: 'Multiply',
+            symbol: '*'
+         },
+         {
+            operation: 'Divide',
+            symbol: '\/'
+         },
+      ]
   }
 
   /**

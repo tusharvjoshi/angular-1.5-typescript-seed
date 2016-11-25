@@ -3,7 +3,7 @@
       Enter a number <span class="glyphicon glyphicon-arrow-right"></span>
    </label>
 
-   <input type="number" class="demo-input" ng-model="$ctrl.amount" name="demo-number">
+   <input type="number" class="demo-input" ng-model="$ctrl.initInput" name="demo-number">
 
    <label for="demo-selection">
       Rounding <span class="glyphicon glyphicon-arrow-right"></span>
@@ -24,8 +24,10 @@
       <div class="row">
          <div class="col-md-3" ng-repeat="calc in $ctrl.numCalc | orderBy:$ctrl.largest">
             <h3 class="sub-title"> {{calc.title}} {{calc.modifier}} </h3>
-            <div class="demo-output-number">{{$ctrl.calculate(calc.modifier, calc.op, $ctrl.amount)}}</div>
+            <div class="demo-output-number">{{$ctrl.calculate(calc.modifier, calc.op, $ctrl.initInput)}}</div>
          </div>
       </div>
    </div>
 </div>
+
+<main-demo-form></main-demo-form>
