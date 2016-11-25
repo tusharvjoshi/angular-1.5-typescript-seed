@@ -7,12 +7,12 @@
     "typescript",
     "angular material"
   ],
-  "author": "Andrew Hamilton <andrew.hamilton.dev@gmail.com>",
+  "author": "Alex Dodge <alex.mdodge@gmail.com>",
   "license": "MIT",
-  "homepage": "https://github.com/andrew-hamilton-dev/angular-1.5-typescript/",
+  "homepage": "https://github.com/alexmdodge/angular-1.5-typescript/",
   "repository": {
     "type": "git",
-    "url": "https://github.com/andrew-hamilton-dev/angular-1.5-typescript.git"
+    "url": "https://github.com/alexmdodge/angular-1.5-typescript/"
   },
   "bugs": {
     "url": "https://github.com/andrew-hamilton-dev/angular-1.5-typescript/issues"
