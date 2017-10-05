@@ -47,7 +47,7 @@
     "@angular/core": "^2.1.2",
     "@angular/platform-browser": "^2.1.2",
     "@angular/router": "*",
-    "LogUnobtrusiveExtension": "git+ssh://git@github.com/lwhiteley/AngularLogExtender.git#0.0.10",
+    "LogUnobtrusiveExtension": "https://github.com/lwhiteley/AngularLogExtender.git#0.0.10",
     "angular": "^1.5.0",
     "angular-animate": "^1.5.0",
     "angular-aria": "^1.5.0",
